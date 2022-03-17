@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   flex: 1;
@@ -18,6 +19,8 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   object-position: top;
+
+  ${mobile({ height: "30vh" })}
 `;
 const Info = styled.div`
   position: absolute;
@@ -35,6 +38,8 @@ const Title = styled.h1`
   margin-bottom: 20px;
   text-shadow: -1px -1px 0 #2e2e2e, 1px -1px 0 #2e2e2e, -1px 1px 0 #2e2e2e,
     1px 1px 0 #2e2e2e;
+
+  ${mobile({ fontSize: "30px" })}
 `;
 const Button = styled.button`
   border: none;

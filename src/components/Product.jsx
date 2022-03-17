@@ -4,6 +4,7 @@ import {
   ShoppingCartOutlined,
 } from "@mui/icons-material";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Info = styled.div`
   height: 100%;
@@ -33,6 +34,8 @@ const Container = styled.div`
   &:hover ${Info} {
     opacity: 1;
   }
+
+  ${mobile({ height: "300px" })}
 `;
 const Circle = styled.div`
   width: 200px;
